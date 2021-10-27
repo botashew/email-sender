@@ -1,0 +1,17 @@
+html
+    head
+        title= title
+    body
+        h1= message
+        div
+            form(action="send" method="POST")
+                label(for="from") From: 
+                input(type="text" id="from" placeholder="Email" name="emailFrom")    
+                input(type="password" id="pwd" placeholder="Password" name="pwd")
+                label(for="to") To: 
+                input(type="text" id="to" placeholder="Email" name="emailTo")
+                label(for="subject") Subject: 
+                input(type="text" id="subject" name="subject")
+                label(for="text") Text: 
+                textarea(name="text", cols="30", rows="10")  
+                button(type="submit") Send
